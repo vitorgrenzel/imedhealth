@@ -3250,18 +3250,18 @@ a:not(.btn):hover {
 }
 
 /* Footer */
-footer{
-    height: 69px;
+footer {
     background: #fff !important;
 }
 
 .footer--simple {
+    height: 69px;
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
-footer .bottom .center > img {
+footer .footer--simple .center > img {
     margin: 19px 0 0 8px;
     float: left;
 }
@@ -3270,7 +3270,7 @@ footer .bottom .center > img {
     margin: auto;
 }
 
-footer .bottom p {
+footer .footer--simple p {
     padding: 0 20px;
     font-size: 13px;
     color: #05184e;
@@ -3300,13 +3300,20 @@ footer a.local .pointer {
 }
 
 @media (max-width: 992px) {
-    .footer__imed .center {
+    .footer--simple {
+        height: 105px;
+        margin-bottom: 30px;
+    }
+    footer .footer--simple p {
+        font-size: 12px;
+    }
+    .footer--simple .center {
         text-align: center;
     }
-    footer .bottom .center > img {
+    footer .footer--simple .center > img {
         float: inherit !important;
     }
     footer a.local {
-        margin: 31px 0px 0 0px;
+        display: none;
     }
 }

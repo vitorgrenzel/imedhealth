@@ -27,7 +27,8 @@
 
 <body>
   <header id="home" class="section header" style="--wr-max:1200px">
-    <div class="wr color-1"><a id="headerLogo" href="#home" class="header__logo" style="font-weight:600;font-size:26px">IMED
+    <div class="wr color-1"><a id="headerLogo" href="#home" class="header__logo"
+        style="font-weight:600;font-size:26px">IMED
         Health</a>
       <nav id="headerNav" class="header__nav">
         <div class="headerNav__links"><a href="#sobre">Sobre</a><a href="#contato">Contato</a></div>
@@ -98,7 +99,8 @@
         <div class="ft__wrapper" style="max-width:570px">
           <div class="ft__content">
             <h1 class="hero__title color-1 weight-title-h font-title">IMED Health</h1>
-            <p class="hero__subtitle weight-text">Você está preocupado com a COVID-19? Você acha que está em risco? Você gostaria de receber ajuda?</p>
+            <p class="hero__subtitle weight-text">Você está preocupado com a COVID-19? Você acha que está em risco? Você
+              gostaria de receber ajuda?</p>
             <div class="ctas"></div>
             <div class="appStores"><a
                 href="https://itunes.apple.com/us/music-video/never-gonna-give-you-up/277040657"><img
@@ -335,7 +337,7 @@
 
           function sendData(data) {
             var request = new XMLHttpRequest();
-            request.open('POST', window.location.origin + '/api/contact', true);
+            request.open('POST', 'https://nn03rg57qkag.landen.co/api/contact', true);
             request.setRequestHeader(
               'Content-Type',
               'application/x-www-form-urlencoded; charset=UTF-8'
@@ -434,18 +436,14 @@
     style="background-color:#222825;padding-bottom:15px;padding-top:15px;--pdx-min-height:0px;--wr-max:1200px">
     <div class="wr">
       <div class="footer footer--simple">
-        <div class="bottom">
-          <div class="center">
-            <img src="https://www.imed.edu.br/Content/themes/base/images/imed-mini.png" alt="IMED">
-            <p>
-              IMED - Rua Senador Pinheiro, 304 - Passo Fundo - RS <br>
-              IMED - Rua Dona Laura, 1020 – Bairro MontSerrat - Porto Alegre - RS
-            </p>
-            <a href="https://www.imed.edu.br/institucional/localizacao" class="local"><i class="pointer icon"></i>Onde
-              Estamos</a>
-            <div class="curtir">
-            </div>
-          </div>
+        <div class="center">
+          <img src="https://www.imed.edu.br/Content/themes/base/images/imed-mini.png" alt="IMED">
+          <p>
+            IMED - Rua Senador Pinheiro, 304 - Passo Fundo - RS <br>
+            IMED - Rua Dona Laura, 1020 – Bairro MontSerrat - Porto Alegre - RS
+          </p>
+          <a href="https://www.imed.edu.br/institucional/localizacao" class="local"><i class="pointer icon"></i>Onde
+            Estamos</a>
         </div>
       </div>
     </div>
@@ -485,7 +483,7 @@
         })
 
         var request = new XMLHttpRequest()
-        request.open('POST', '/api/view', true)
+        request.open('POST', 'https://nn03rg57qkag.landen.co/api/view', true)
         request.setRequestHeader(
           'Content-Type',
           'application/x-www-form-urlencoded; charset=UTF-8'
@@ -496,7 +494,6 @@
             path: window.location.pathname
           })
         )
-
       })()
   </script>
 </body>
